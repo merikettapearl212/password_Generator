@@ -30,7 +30,7 @@ function generatePassword() {
   var useSpecial= confirm ("Would you like to use special characters?");
   var useNumber= confirm = ("Would you like to use numbers?");
 
-    if (totalChoice < 8 || totalChoice > 128) {
+    if (totalChoice >= 8 || totalChoice <= 128) {
       alert ("Must be between 8-128 characters!");
       //return;?
     }
@@ -39,6 +39,12 @@ function generatePassword() {
     //if (useUppercase === true) {}
     //if (useSpecial === true) {}
     //if (useNumber === true) {}
+    //for (let i = 0; i < plength; i++) {
+    //passwordCharacter += passwordCharacter.charAt(
+    //Math.floor(Math.random() * passwordCharacter.length)
+    //);
+  //}
+  //
 
 //notes
 //no need for loops?
