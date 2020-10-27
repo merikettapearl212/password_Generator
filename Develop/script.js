@@ -32,6 +32,7 @@ function generatePassword() {
 
     if (totalChoice < 8 || totalChoice > 128) {
       alert ("Must be between 8-128 characters!");
+      //return;?
     }
   }//im a long function!?
     //if (useLowercase === true) {}
