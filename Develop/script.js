@@ -32,20 +32,16 @@ function generatePassword() {
 
     if (totalChoice < 8 || totalChoice > 128) {
       alert ("Must be between 8-128 characters!");
-      
     }
-    if (useLowercase === true) {
+  }//im a long function!?
+    //if (useLowercase === true) {}
+    //if (useUppercase === true) {}
+    //if (useSpecial === true) {}
+    //if (useNumber === true) {}
 
-    }
-    if (useUppercase === true) {
-
-    }
-    if (useSpecial === true) {
-
-    }
-    if (useNumber === true) {
-
-    }
-}
+//notes
+//no need for loops?
+//var num = Math.random() * 10) +1;
+//Math.ceil
 
 
