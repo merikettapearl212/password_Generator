@@ -29,7 +29,7 @@ function generatePassword() {
       alert ("Must be between 8-128 characters!");
       return;
     }
-  }
+  
   //confirm use of lowercase letters
   var useLowercase = confirm ("Would you like to include lowercase letters?");
     if (useLowercase === true) {
@@ -50,6 +50,7 @@ function generatePassword() {
     if (useNumber === true) {
 
     }
+  }
   
     //passwordCharacter += passwordCharacter.charAt(
     //Math.floor(Math.random() * passwordCharacter.length)
