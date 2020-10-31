@@ -7,12 +7,12 @@
  I struggled with this, and still don't fully understand, it also doesn't work 100%, definately needs some work. 
 
  ## Screenshot of final outcome:
-![Screenshot] (password_generator/Develop/03-screenshot.png)
+![Screenshot](./Develop/03-screenshot.png)
 
  ## Links:
 
- link to live website 
+ link to live website: 
  https://merikettapearl212.github.io/password_generator/
 
- link to repo
+ link to repo: 
  https://github.com/merikettapearl212/password_generator
