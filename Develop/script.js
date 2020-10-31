@@ -55,10 +55,10 @@ function generatePassword() {
     //Math.floor(Math.random() * passwordCharacter.length)
 //var num = Math.random() * 10) +1;
 //Math.ceil
-for (i =0; i < totalLength; i++) {
-  = [Math.floor(Math.random() * passwordCharacter.length)];
-  console.log();
-}
+//for (i =0; i < totalLength; i++) {
+//   [Math.floor(Math.random() * passwordCharacter.length)];
+//  console.log();
+//}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
