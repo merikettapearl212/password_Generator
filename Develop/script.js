@@ -23,27 +23,32 @@ function generatePassword() {
       return;
     }
   }
+  //confirm use of lowercase letters
+  var useLowercase = confirm ("Would you like to include lowercase letters?");
+    if (useLowercase === true) {
 
-  var useLowercase = confirm ("Would you like to use lowercase letters?");
-  var useUppercase = confirm ("Would you like to use uppercase letters?");
-  var useSpecial= confirm ("Would you like to use special characters?");
-  var useNumber= confirm = ("Would you like to use numbers?");
-  //im a long function!?
-    //if (useLowercase === true) {}
-    //if (useUppercase === true) {}
-    //if (useSpecial === true) {}
-    //if (useNumber === true) {}
-    //for (let i = 0; i < plength; i++) {
+    }
+  //confirm use of uppercase letters.
+  var useUppercase = confirm ("Would you like to include uppercase letters?");
+    if (useUppercase === true) {
+
+    }
+  //confirm use of special characters.
+  var useSpecial= confirm ("Would you like to include special characters?");
+    if (useSpecial === true) {
+
+    }
+  //confirm use of numbers.
+  var useNumber= confirm = ("Would you like to include numbers?");
+    if (useNumber === true) {
+
+    }
+  
     //passwordCharacter += passwordCharacter.charAt(
     //Math.floor(Math.random() * passwordCharacter.length)
-    //);
-  //}
-  //
-
-//notes
-//no need for loops?
 //var num = Math.random() * 10) +1;
 //Math.ceil
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
