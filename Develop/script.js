@@ -29,28 +29,20 @@ function generatePassword() {
       alert ("Must be between 8-128 characters!");
       return;
     }
-  
-  //confirm use of lowercase letters
-  var useLowercase = confirm ("Would you like to include lowercase letters?");
-    if (useLowercase === true) {
-
-    }
-  //confirm use of uppercase letters.
-  var useUppercase = confirm ("Would you like to include uppercase letters?");
-    if (useUppercase === true) {
-
-    }
-  //confirm use of special characters.
-  var useSpecial= confirm ("Would you like to include special characters?");
-    if (useSpecial === true) {
-
-    }
-  //confirm use of numbers.
-  var useNumber= confirm = ("Would you like to include numbers?");
-    if (useNumber === true) {
-
-    }
   }
+  //confirm use of lowercase letters
+  //var useLowercase = confirm ("Would you like to include lowercase letters?");
+   // if (useLowercase === true) { }
+  //confirm use of uppercase letters.
+  //var useUppercase = confirm ("Would you like to include uppercase letters?");
+    //if (useUppercase === true) {}
+  //confirm use of special characters.
+  //var useSpecial= confirm ("Would you like to include special characters?");
+    //if (useSpecial === true) {}
+  //confirm use of numbers.
+  //var useNumber= confirm = ("Would you like to include numbers?");
+    //if (useNumber === true) {}
+  
   
     //passwordCharacter += passwordCharacter.charAt(
     //Math.floor(Math.random() * passwordCharacter.length)
