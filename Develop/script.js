@@ -24,29 +24,47 @@ function generatePassword() {
       alert ("Must be between 8-128 characters!");
       return;
     }
-}
-  //confirm use of lowercase letters
-  //var useLowercase = confirm ("Would you like to include lowercase letters?");
-    //if (useLowercase === true) { }
-  //confirm use of uppercase letters.
-  //var useUppercase = confirm ("Would you like to include uppercase letters?");
-    //if (useUppercase === true) {}
-  //confirm use of special characters.
-  //var useSpecial= confirm ("Would you like to include special characters?");
-    //if (useSpecial === true) {}
-  //confirm use of numbers.
-  //var useNumber= confirm = ("Would you like to include numbers?");
-    //if (useNumber === true) {}
-  
-  
-    //passwordCharacter += passwordCharacter.charAt(
-    //Math.floor(Math.random() * passwordCharacter.length)
-//var num = Math.random() * 10) +1;
-//Math.ceil
-//for (i =0; i < totalLength; i++) {
-//   [Math.floor(Math.random() * passwordCharacter.length)];
-//  console.log();
-//}
+    //Ask and confirm use of lowercase letters
+    var useLowercase = confirm ("Would you like to include lowercase letters?");
+      if (useLowercase === true) { 
+        characterLot = characterLot.concat(passwordCharacter.lowerCase);
+      }
+
+    //Ask and confirm use of uppercase letters
+    var useUppercase = confirm ("Would you like to include uppercase letters?");
+      if (useUppercase === true) {
+        characterLot = characterLot.concat(passwordCharacter.upperCase);
+      }
+    
+    //Ask confirm use of special characters.
+    var useSpecial= confirm ("Would you like to include special characters?");
+      if (useSpecial === true) {
+        characterLot = characterLot.concat(passwordCharacter.specialCharacters);
+      }
+
+    //Ask and confirm use of numbers.
+    var useNumber= confirm = ("Would you like to include numbers?");
+      if (useNumber === true) {
+        characterLot = characterLot.concat(passwordCharacter.numbers);
+      }
+
+      if(useLowercase === false && useUppercase === false && useSpecial === false && useNumbers === false) {
+        alert("Invalid criteria. You must select at least one character type.");
+        return;
+      }
+
+      alert ("You have selected: Length-" + totalLength + "; Lowercase-" + useLowercase + "; Uppercase-" + useUppercase + "; Special Characters" + useSpecial + "; Numbers" + useNumber);
+
+      var passwordOut = [];
+
+      for (var i = 0; i < totalLength; i++) {
+        var characterSelection = characterLot[Math.floor(Math.random() * characterLot.length)];
+        passwordOut += characterSelection;
+      }
+
+      return passwordOut;
+  }
+    
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
