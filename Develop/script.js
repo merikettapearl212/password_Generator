@@ -48,8 +48,8 @@ function generatePassword() {
         characterLot = characterLot.concat(passwordCharacter.numbers);
       }
 
-      if(useLowercase === false && useUppercase === false && useSpecial === false && useNumbers === false) {
-        alert("Invalid criteria. You must select at least one character type.");
+      if(useLowercase === false && useUppercase === false && useSpecial === false && useNumber === false) {
+        alert("You must select at least one character type.");
         return;
       }
 
