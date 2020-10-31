@@ -15,12 +15,14 @@ function generatePassword() {
   
   //Create variable that serves as whole lot for loop.
   var characterLot = [];
+ //password string
+  var passwordOut = [];
 
   //Ask prompt user for password length. Use parsInt so string is made into a number nalue
   var totalLength = parseInt (prompt ("How long would you like your password to be? (Must be between 8-128 characters)?"));
   
   //If not valid length, prompt again for length
-    if (totalLength >= 8 || totalLength <= 128) {
+    if (totalLength < 8 || totalLength > 128) {
       alert ("Must be between 8-128 characters!");
       return;
     }
@@ -48,19 +50,17 @@ function generatePassword() {
         characterLot = characterLot.concat(passwordCharacter.numbers);
       }
 
-      if (useLowercase === false && useUppercase === false && useSpecial === false && useNumber === false) {
-        alert("You must select at least one character type.");
+      if (characterLot.length === 0){
+        alert ("You must select at least one character type.");
         return;
       }
 
-      alert ("You have selected: Length" + totalLength + "; Lowercase" + useLowercase + "; Uppercase" + useUppercase + "; Special Characters" + useSpecial + "; Numbers" + useNumber);
+      while (passwordOut.length <= totalLength -1) {
+        var randomCharacter = characterLot[Math.floor(Math.random() * characterLot.length)];
 
-      var passwordOut = [];
-
-      for (var i = 0; i < totalLength; i++) {
-        var characterSelection = characterLot[Math.floor(Math.random() * characterLot.length)];
-        passwordOut += characterSelection;
+        passwordOut += randomCharacter;
       }
+
 
       return passwordOut;
   }
