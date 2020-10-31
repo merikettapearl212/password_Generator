@@ -10,9 +10,16 @@ var passwordCharacter = {
   numbers: ["0,1,2,3,4,5,6,7,8,9"],
 }
 
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+}
+
 //prompt ask user for password criteria
 //user's password between 8-128 characters
-//ask user if they want special character types lowercase, uppercase, numeric, and/or special characters
 function generatePassword() {
   
   //prompt ask user for password length.
@@ -48,13 +55,9 @@ function generatePassword() {
     //Math.floor(Math.random() * passwordCharacter.length)
 //var num = Math.random() * 10) +1;
 //Math.ceil
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+for (i =0; i < totalLength; i++) {
+  = [Math.floor(Math.random() * passwordCharacter.length)];
+  console.log();
 }
 
 // Add event listener to generate button
