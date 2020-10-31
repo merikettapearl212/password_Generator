@@ -20,7 +20,7 @@ function generatePassword() {
   var totalLength = parseInt (prompt ("How long would you like your password to be? (Must be between 8-128 characters)?"));
   
   //If not valid length, prompt again for length
-    if (totalLength <= 8 || totalLength >= 128) {
+    if (totalLength >= 8 || totalLength <= 128) {
       alert ("Must be between 8-128 characters!");
       return;
     }
@@ -53,6 +53,7 @@ function generatePassword() {
         return;
       }
 
+      alert ("You have selected: Length" + totalLength + "; Lowercase" + useLowercase + "; Uppercase" + useUppercase + "; Special Characters" + useSpecial + "; Numbers" + useNumber);
 
       var passwordOut = [];
 
