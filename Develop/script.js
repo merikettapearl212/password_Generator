@@ -45,7 +45,7 @@ function generatePassword() {
       }
 
     //Ask and confirm use of numbers.
-    var useNumber = confirm = ("Would you like to include numbers?");
+    var useNumber = confirm ("Would you like to include numbers?");
       if (useNumber === true) {
         characterLot = characterLot.concat(passwordCharacter.numbers);
       }
