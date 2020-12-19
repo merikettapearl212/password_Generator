@@ -6,7 +6,7 @@
  
 
  ## Screenshot of final outcome:
-![Screenshot](password_generator/assets/03-screenshot.png)
+![Screenshot](./assets/03-screenshot.png)
 
  ## Links:
 
